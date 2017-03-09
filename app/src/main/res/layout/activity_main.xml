@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lt.vtvpmc.ems.zwaclaw.activitystate.MainActivity" android:weightSum="1"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/addReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:onClick="onButtonClick"
+        android:text="@string/button_text" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/input_text"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        style="@style/DefaultText"
+        android:text="@string/default_text"/>
+
+    <ListView
+        android:id="@+id/sarasas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:visibility="visible">
+    </LinearLayout>
+
+</LinearLayout>
